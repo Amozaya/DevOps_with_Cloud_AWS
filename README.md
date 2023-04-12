@@ -17,3 +17,8 @@ The main reason why DevOps became so popular lays in its benefits, which are:
 * Collaboration - better collaboration between development and Operation teams helps to better prepare the product that goes from development into deployment.
 * Automation - it is the core of the DevOps. It helps to reduce the time gap between development and deployment stages, making the delivery of the product more efficient.
 * Monitoring - provides an information about service uptime and performance. This information can help the team to determine any areas of improvements that could be done for the next release.
+
+
+
+## What is Cloud Computing?
+
