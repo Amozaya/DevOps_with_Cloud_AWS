@@ -22,3 +22,19 @@ The main reason why DevOps became so popular lays in its benefits, which are:
 
 ## What is Cloud Computing?
 
+Cloud Computing is the on-demand provider of IT resources over the Internet. Instead of buying and maintaining on your own, Cloud Computing allows you to "rent" technology services, such as storage, databases, and computing power.
+
+The benefits of the cloud computing are following:
+* Agility - you get access to many technologies in the matter of minutes and don't need to spend time on setting them up.
+* Elasticity - depending on your business activity, resources you use can be scaled up or down, depending on the demand, meaning, you don't have to pay for more resources in advance.
+* Cost saving - you only pay for what you are using.
+* Deploy globally - by having databases around the world you can easily deploy your product anywhere you need.
+
+The reason "Why we should use Cloud Computing" lays in the benefits that are explained above. 
+It also helps businesses to protect their data against loss, in case the local machine is malfunctioning or corrupted, and companies that use Cloud Computing don't have to worry about the security, as it will be cloud service provider's responsibility to ensure that all the data stored is secured.
+
+### How cloud computing fits into DevOps?
+
+As DevOps is about automation and making the workflow quicker it relays a lot on Cloud services.  
+Cloud Computing allows DevOps to create tools that will be hosted on the cloud server for easier access and maintenance.
+Having accessible tools on the cloud server helps DevOps to improve collaboration in the team, as all the files will be centralized and located in one space. 
