@@ -56,3 +56,12 @@ Having accessible tools on the cloud server helps DevOps to improve collaboratio
       * Add new security rule by clicking on `Add security group rule`
       * set your HTTP security group. Ensure that `Type` is set to `HTTP` and `Source Type` is set to `Anywhere`
    * Rest of the settings you can leave be default for now. Then head to `Summary` to verify everything and then click on `Launch Instance` to start your VM
+   
+## Connect to your Instance through GitBash
+
+1. Go to `Instances` and in the search bar type the name of your instance, the one you have created
+2. Once you found your instance ensure that it is running. 
+3. You can use `Instance State` menu to `Start`, `Stop`, `Reboot`, `Terminate` your instance
+4. When instance is running and it is selected, click on `Connect` in the top right corner
+5. In the new window make sure you are on `SSH` connection tab
+6. Follow the instructions provided to connect to your instance through GitBash. Make you you run everything from your `.ssh` folder
