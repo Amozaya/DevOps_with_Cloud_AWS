@@ -5,7 +5,7 @@
 * Helps to improve collaboration and communication
 * Helps to improve SDLC by automating manual tasks
 
-![DevOps diagram](/Resources/What-DevOps-looks-like.jpg)
+![DevOps diagram](Resources/What-DevOps-looks-like.jpg)
 
 ## Key benefits of DevOps
 * Efficiency
