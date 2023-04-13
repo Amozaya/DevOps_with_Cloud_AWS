@@ -38,3 +38,21 @@ It also helps businesses to protect their data against loss, in case the local m
 As DevOps is about automation and making the workflow quicker it relays a lot on Cloud services.  
 Cloud Computing allows DevOps to create tools that will be hosted on the cloud server for easier access and maintenance.
 Having accessible tools on the cloud server helps DevOps to improve collaboration in the team, as all the files will be centralized and located in one space. 
+
+
+## Create a VM on AWS
+
+1. Once you logged in to AWS, you have to ensure that your selected region is correct. In our case it has to be `Ireland`, as it is the closest one to us that has all the tools we need.
+2. In the search bar type `EC2` and search for `EC2 Services`. Once you found it - click on it
+3. In the new page search for a button called `Launch instance`. This button also has a dropdown menu where you can select to create a new instance or use the template. Currently, we are going to create a new one from scratch.
+4. There are few settings we need to change before we create our instance:
+   * Add the name of your instance. Ensure you are using the correct name convention
+   * Select the OS for your VM. In our case we are using `Ubuntu Server 20.04 LTS (HVM), SSD Volume Type`
+   * Select instance type. For our example default one is enough - `t2.micro`
+   * Select your SSH key. Search for the key called `tech221` in the search bar and select the key
+   * Now you need to edit security groups:
+      * add the name and the description to your security group
+      * set your SSH security group. Ensure that `Type` is set to `ssh` and `Source Type` is set to `My IP`
+      * Add new security rule by clicking on `Add security group rule`
+      * set your HTTP security group. Ensure that `Type` is set to `HTTP` and `Source Type` is set to `Anywhere`
+   * Rest of the settings you can leave be default for now. Then head to `Summary` to verify everything and then click on `Launch Instance` to start your VM
