@@ -65,3 +65,4 @@ Having accessible tools on the cloud server helps DevOps to improve collaboratio
 4. When instance is running and it is selected, click on `Connect` in the top right corner
 5. In the new window make sure you are on `SSH` connection tab
 6. Follow the instructions provided to connect to your instance through GitBash. Make you you run everything from your `.ssh` folder
+7. !!!Please note, when you restart your instance the IP address will change so you will have to visit this page again and copy a new link to connect!!!
