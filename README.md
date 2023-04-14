@@ -66,3 +66,36 @@ Having accessible tools on the cloud server helps DevOps to improve collaboratio
 5. In the new window make sure you are on `SSH` connection tab
 6. Follow the instructions provided to connect to your instance through GitBash. Make you you run everything from your `.ssh` folder
 7. !!!Please note, when you restart your instance the IP address will change so you will have to visit this page again and copy a new link to connect!!!
+
+
+## Creating an AMI
+AMI allows you to create a "snapshot" of your instance, to prevent lose of data in case of instance being terminated. You can use then AMI to launch a new instance with all the data you had on it previously. You can also share this AMI with someone else so they could start working with it without worrying about setting it up first.
+
+![AMI Diagram]<resources/custom_ami_1.gif>
+
+When start working with AWS user has a few options:
+* User can use some of the default AMI available if they meet user's needs
+* User can create a new instance from scratch and customize it for their needs
+* User can use their custom instance in order to create an AMI to save the data and then re-use this version later
+
+You can use AMI similar to version control on Git, whenever you make changes, configurate or install new services, you can create a new image with those updates, so then you can use updated version later, or if updates don't work, you can roll back to the previous image.
+
+
+### How to create an image
+
+1. Go to Instances
+2. Search for your instance, you can use a searchbar, and then select it
+3. Once selected, click on `Actions` in the top right corner, and then go to `Image and Templates` --> `Create Image`
+4. In the new window you need to give the name to your instance, remember to follow naming convention and give it a logical name
+5. You can add description (optional), for example what services are installed or what security groups need to be added
+6. Once it's done you can leave the rest as default and click on `Create Image`
+
+### How to make an instance from your image
+
+1. On the left panel search for `Images -> AMIs` and click on it
+2. Search for the image you have created, you can use the searchbar, and select it
+3. On the top right corner click on `Launch Instance from AMI`
+4. On the new page just follow the same instructions as when you are creating a new custom instance, the only difference you do not have to change anything for "Application and OS Images", as it will use the image we have created
+   * If you are not planning to make any changes to the instace and you only want to allow the user to use what is there you can skip SSH connection
+5. When all the setting are completed you have to click on `Launch Instance`
+6. Now, just wait for your instance to start and it will be ready to use shortly!
