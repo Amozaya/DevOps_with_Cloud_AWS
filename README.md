@@ -125,4 +125,4 @@ Steps to add "User Data":
 3. Scroll to the very bottom of this tab and you will see a box that says `User data`
 4. Write your script there and it will be executed when you click on `Launch instance`
 
-_Please note! Ensure that your script is correct and there are no erros. Script will run only once when creating the instance. If there are any errors in your script it might not work and you will have to do installation manualy, or you will have to create a new instance!_ 
+_Please note! Ensure that your script is correct and there are no errors. Script will run only once when creating the instance. If there are any errors in your script it might not work and you will have to do installation manualy, or you will have to create a new instance!_ 
