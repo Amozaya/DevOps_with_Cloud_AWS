@@ -71,7 +71,7 @@ Having accessible tools on the cloud server helps DevOps to improve collaboratio
 ## Creating an AMI
 AMI allows you to create a "snapshot" of your instance, to prevent lose of data in case of instance being terminated. You can use then AMI to launch a new instance with all the data you had on it previously. You can also share this AMI with someone else so they could start working with it without worrying about setting it up first.
 
-![AMI Diagram]<resources/custom_ami_1.gif>
+![AMI Diagram](resources/custom_ami_1.gif)
 
 When start working with AWS user has a few options:
 * User can use some of the default AMI available if they meet user's needs
