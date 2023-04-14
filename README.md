@@ -43,19 +43,31 @@ Having accessible tools on the cloud server helps DevOps to improve collaboratio
 ## Create a VM on AWS
 
 1. Once you logged in to AWS, you have to ensure that your selected region is correct. In our case it has to be `Ireland`, as it is the closest one to us that has all the tools we need.
+   ![Select region](resources/aws_region.JPG)
 2. In the search bar type `EC2` and search for `EC2 Services`. Once you found it - click on it
+   ![EC2](resources/ec2_search.JPG)
 3. In the new page search for a button called `Launch instance`. This button also has a dropdown menu where you can select to create a new instance or use the template. Currently, we are going to create a new one from scratch.
+   ![Launch Instance](resources/launch_instance.JPG)
 4. There are few settings we need to change before we create our instance:
    * Add the name of your instance. Ensure you are using the correct name convention
+      ![Instance Name](resources/instance_name.JPG)
    * Select the OS for your VM. In our case we are using `Ubuntu Server 20.04 LTS (HVM), SSD Volume Type`
+      ![AIM version](resources/vm_os_version.JPG)
    * Select instance type. For our example default one is enough - `t2.micro`
+      ![Instance Type](resources/instance_type.JPG)
    * Select your SSH key. Search for the key called `tech221` in the search bar and select the key
+      ![Instance Key](resources/instance_key.JPG)
    * Now you need to edit security groups:
       * add the name and the description to your security group
+         ![SG name](resources/network_settings_name.JPG)
       * set your SSH security group. Ensure that `Type` is set to `ssh` and `Source Type` is set to `My IP`
+         ![Security Group 1](resources/security_group_1.JPG)
       * Add new security rule by clicking on `Add security group rule`
+         ![Add Security Group](resources/add_security_group.JPG)
       * set your HTTP security group. Ensure that `Type` is set to `HTTP` and `Source Type` is set to `Anywhere`
+         ![Security Group 2](resources/security_group_2.JPG)
    * Rest of the settings you can leave be default for now. Then head to `Summary` to verify everything and then click on `Launch Instance` to start your VM
+      ![Create Instance](resources/launch_created_instance.JPG)
    
 ## Connect to your Instance through GitBash
 
