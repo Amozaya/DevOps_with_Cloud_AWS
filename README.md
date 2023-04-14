@@ -111,3 +111,18 @@ You can use AMI similar to version control on Git, whenever you make changes, co
    * If you are not planning to make any changes to the instace and you only want to allow the user to use what is there you can skip SSH connection
 5. When all the setting are completed you have to click on `Launch Instance`
 6. Now, just wait for your instance to start and it will be ready to use shortly!
+
+
+
+## Add custom user data to your instance
+To make your process of creating and setting up new instance faster you can use "Custom User Data" in order to automate some of the configuration. 
+For example, after we create an instance we used to connect to it throught Bash and then write and run the script in order to update the environment and install required packages. With "User Data" we can write our script there and it will execute it and do all the required installations whilst creating the instance, making th process much quicker for us.
+
+Steps to add "User Data":
+
+1. Select to launch a new instance and follow all the steps above to set up the instance.
+2. Before confirming and creating a new instance open `Advanced details` tab
+3. Scroll to the very bottom of this tab and you will see a box that says `User data`
+4. Write your script there and it will be executed when you click on `Launch instance`
+
+_Please note! Ensure that your script is correct and there are no erros. Script will run only once when creating the instance. If there are any errors in your script it might not work and you will have to do installation manualy, or you will have to create a new instance!_ 
